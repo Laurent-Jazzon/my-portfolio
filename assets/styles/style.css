@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Quicksand-medium";
+  src: url("../font/Quicksand/static/Quicksand-Medium.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand-bold";
+  src: url("../font/Quicksand/static/Quicksand-Bold.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand-regular";
+  src: url("../font/Quicksand/static/Quicksand-Regular.ttf");
+}
+
+@font-face {
+  font-family: "Quicksand-light";
+  src: url("../font/Quicksand/static/Quicksand-Light.ttf");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+}
+
+.home-first-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f4de4d;
+}
+
+.home-first-page nav {
+  width: 100vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 2vh;
+  font-family: "Quicksand-bold";
+}
+
+.home-first-page nav a {
+  margin-left: 7vw;
+  font-size: 1.1vw;
+  text-decoration: none;
+  color: black;
+}
+
+.home-first-page nav a:hover {
+  color: #929596bd;
+}
+
+.home-first-page nav .logo {
+  width: 10vh;
+}
+
+.home-first-page main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 15vh;
+}
+
+.home-first-page main .laptop {
+  margin-top: 4vh;
+  width: 30vw;
+}
+
+.home-first-page main .first-text {
+  margin-left: 2vw;
+  font-family: "Quicksand-light";
+}
+
+.home-first-page main .first-text h1 {
+  font-size: 3.5vw;
+}
+
+.home-first-page main .first-text h1 .bold-text {
+  font-family: "Quicksand-medium";
+}
+
+.home-first-page main .first-text h2 {
+  margin-top: 10vh;
+  font-size: 3.5vw;
+}
+
+.home-second-page {
+  background-color: #929596bd;
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-second-page .second-text {
+  font-family: "Quicksand-light";
+  color: white;
+  text-align: right;
+}
+
+.home-second-page .second-text h3 {
+  font-size: 3.5vw;
+}
+
+.home-second-page .second-text h4 {
+  margin-top: 10vh;
+  font-size: 3.5vw;
+}
+
+.home-second-page .second-text h4 .bold-text {
+  font-family: "Quicksand-medium";
+}
+
+.home-second-page .work-images {
+  margin-left: 5vw;
+  width: 30vw;
+}
+
+.home-second-page .work-images .second-img {
+  width: 20vw;
+  height: 40vh;
+  background-image: url("../img/tempo-img.jpg");
+  border-radius: 1vw;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
+}
+
+.home-second-page .work-images .second-img-2 {
+  margin-top: -20vh;
+  margin-left: 5vw;
+  width: 20vw;
+  height: 40vh;
+  background-image: url("../img/tempo-img-2.jpg");
+  border-radius: 1vw;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
+}
+
+.home-third-page {
+  height: 100vh;
+  width: 100vw;
+  background-color: #f4de4d;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-third-page h5 {
+  font-family: "Quicksand-light";
+  font-size: 3.5vw;
+}
+
+.home-third-page a {
+  margin-top: 3vh;
+  font-family: "Quicksand-bold";
+  font-size: 2vw;
+  color: #929596bd;
+  text-decoration: none;
+}
+
+.home-third-page a:hover {
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

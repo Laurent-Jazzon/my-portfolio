@@ -1,0 +1,167 @@
+@font-face {
+    font-family: "Quicksand-medium";
+    src: url("../font/Quicksand/static/Quicksand-Medium.ttf");
+}
+@font-face {
+    font-family: "Quicksand-bold";
+    src: url("../font/Quicksand/static/Quicksand-Bold.ttf");
+}
+@font-face {
+    font-family: "Quicksand-regular";
+    src: url("../font/Quicksand/static/Quicksand-Regular.ttf");
+}
+@font-face {
+    font-family: "Quicksand-light";
+    src: url("../font/Quicksand/static/Quicksand-Light.ttf");
+}
+$bold: "Quicksand-bold";
+$medium: "Quicksand-medium";
+$regular: "Quicksand-regular";
+$light: "Quicksand-light";
+$yellow: #f4de4d;
+$grey: #929596bd;
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+}
+
+// FIRST PAGE
+.home-first-page {
+    height: 100vh;
+    width: 100vw;
+    background-color: $yellow;
+
+    // NAVBAR
+    nav {
+        width: 100vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        padding: 2vh;
+
+        font-family: $bold;
+        a {
+            margin-left: 7vw;
+            font-size: 1.1vw;
+            text-decoration: none;
+            color: black;
+            &:hover {
+                color: $grey;
+            }
+        }
+        .logo {
+            width: 10vh;
+        }
+    }
+
+    // MAIN
+    main {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-top: 15vh;
+
+        .laptop {
+            margin-top: 4vh;
+            width: 30vw;
+        }
+
+        .first-text {
+            margin-left: 2vw;
+            font-family: $light;
+
+            h1 {
+                font-size: 3.5vw;
+
+                .bold-text {
+                    font-family: $medium;
+                }
+            }
+            h2 {
+                margin-top: 10vh;
+                font-size: 3.5vw;
+            }
+        }
+    }
+    // box-shadow: inset 0px 80px 1000px -10px $grey,inset 0px 80px 1000px -10px $grey;
+}
+
+// SECOND PAGE
+.home-second-page {
+    background-color: $grey;
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .second-text {
+        font-family: $light;
+        color: white;
+        text-align: right;
+        h3 {
+            font-size: 3.5vw;
+        }
+        h4 {
+            margin-top: 10vh;
+            font-size: 3.5vw;
+            .bold-text {
+                font-family: $medium;
+            }
+        }
+    }
+
+    .work-images {
+        margin-left: 5vw;
+        width: 30vw;
+        .second-img {
+            width: 20vw;
+            height: 40vh;
+            background-image: url("../img/tempo-img.jpg");
+            border-radius: 1vw;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);;
+        }
+        .second-img-2 {
+            margin-top: -20vh;
+            margin-left: 5vw;
+            width: 20vw;
+            height: 40vh;
+            background-image: url("../img/tempo-img-2.jpg");
+            border-radius: 1vw;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);;
+        }
+    }
+}
+
+// THIRD PAGE
+.home-third-page {
+    height: 100vh;
+    width: 100vw;
+    background-color: $yellow;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    h5 {
+        font-family: $light;
+        font-size: 3.5vw;
+    }
+    a {
+        margin-top: 3vh;
+        font-family: $bold;
+        font-size: 2vw;
+        color: $grey;
+        text-decoration: none;
+        &:hover {
+            color: black;
+        }
+    }
+}
