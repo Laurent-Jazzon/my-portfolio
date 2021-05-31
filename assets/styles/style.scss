@@ -19,17 +19,41 @@ $medium: "Quicksand-medium";
 $regular: "Quicksand-regular";
 $light: "Quicksand-light";
 $yellow: #f4de4d;
-$grey: #929596bd;
+$grey: #939597;
 
 * {
     margin: 0;
     padding: 0;
     border: 0;
-    overflow-x: hidden;
+    overflow: hidden;
+    scroll-behavior: smooth;
 }
 
-// FIRST PAGE
-.home-first-page {
+// SIDEBAR
+.sideBar {
+    display: flex;
+    opacity: 75%;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 5vw;
+    height: 30vh;
+    position: fixed;
+    z-index: 1;
+    right: 0;
+    .chip {
+        width: 2vw;
+        height: 3vh;
+        background-image: url("../img/Puce-empty.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        &:hover {
+            background-image: url("../img/Puce-full.svg");
+        }
+    }
+}
+
+// HOME
+.home {
     height: 100vh;
     width: 100vw;
     background-color: $yellow;
@@ -76,23 +100,27 @@ $grey: #929596bd;
             font-family: $light;
 
             h1 {
-                font-size: 3.5vw;
+                font-size: 3vw;
 
                 .bold-text {
                     font-family: $medium;
                 }
             }
+        }
+        .second-text {
+            margin-top: 10vh;
+            font-family: $light;
+            color: black;
             h2 {
-                margin-top: 10vh;
-                font-size: 3.5vw;
+                font-size: 1.5vw;
             }
         }
     }
     // box-shadow: inset 0px 80px 1000px -10px $grey,inset 0px 80px 1000px -10px $grey;
 }
 
-// SECOND PAGE
-.home-second-page {
+// MY WORK
+.myWork {
     background-color: $grey;
     width: 100vw;
     height: 100vh;
@@ -102,22 +130,6 @@ $grey: #929596bd;
     justify-content: center;
     align-items: center;
 
-    .second-text {
-        font-family: $light;
-        color: white;
-        text-align: right;
-        h3 {
-            font-size: 3.5vw;
-        }
-        h4 {
-            margin-top: 10vh;
-            font-size: 3.5vw;
-            .bold-text {
-                font-family: $medium;
-            }
-        }
-    }
-
     .work-images {
         margin-left: 5vw;
         width: 30vw;
@@ -126,7 +138,7 @@ $grey: #929596bd;
             height: 40vh;
             background-image: url("../img/tempo-img.jpg");
             border-radius: 1vw;
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
         }
         .second-img-2 {
             margin-top: -20vh;
@@ -135,33 +147,78 @@ $grey: #929596bd;
             height: 40vh;
             background-image: url("../img/tempo-img-2.jpg");
             border-radius: 1vw;
-            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);;
+            box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
         }
     }
 }
 
-// THIRD PAGE
-.home-third-page {
+// ABOUT ME
+.aboutMe {
     height: 100vh;
     width: 100vw;
     background-color: $yellow;
-
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    h5 {
-        font-family: $light;
-        font-size: 3.5vw;
+    .portrait {
+        width: 30vw;
+        border: white solid 1.2vw;
+        margin-left: 10vw;
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.459);
+        transform: rotate(5deg);
     }
-    a {
+    h3 {
+        font-family: $light;
+        font-size: 1.5vw;
+        margin-right: 10vw;
+        margin-left: 3vw;
+    }
+
+    h4 {
         margin-top: 3vh;
-        font-family: $bold;
-        font-size: 2vw;
-        color: $grey;
-        text-decoration: none;
-        &:hover {
-            color: black;
+        font-family: $light;
+        font-size: 1.5vw;
+        margin-right: 10vw;
+        margin-left: 3vw;
+    }
+}
+
+// CONTACT
+.contact {
+    width: 100vw;
+    height: 100vh;
+    background-color: $grey;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 40vw;
+    }
+    .adressContainer {
+        display: flex;
+        flex-direction: column;
+        font-family: $medium;
+        color: white;
+        font-size: 1.5vw;
+        .adress {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            margin-bottom: 10vh;
         }
+        .logo {
+            width: 10vh;
+        }
+        a,p {
+            margin-left: 2vw;
+            color: white;
+            
+            &:hover {
+                color: black;
+            }
+        }
+        
     }
 }

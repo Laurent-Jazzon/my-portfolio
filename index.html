@@ -6,54 +6,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="A portfolio made by Jazzon Laurent to show his skills.">
+    <link rel="icon" type="image/svg+xml" href="./assets/img/Logo-rounded.svg">
     <link rel="stylesheet" href="./assets/styles/style.css">
-    <title>Jazzon Laurent Portfolio</title>
+    <title>JL Portfolio</title>
 </head>
 
 <body>
-    <div class="home-first-page">
+    <!-- HOME -->
+    <div class="home" id="home">
         <nav>
-            <a href="./index.html"><img class="logo" src="./assets/img/Logo.svg" alt="Logo Jazzon Laurent"></a>
-            <a href="./index.html">Home</a>
-            <a href="./assets/html/myWork.html">My work</a>
-            <a href="./assets/html/aboutMe.html">About me</a>
-            <a href="./assets/html/contact.html">Contact</a>
+            <a href="#home"><img class="logo" src="./assets/img/Logo.svg" alt="Logo Jazzon Laurent"></a>
+            <a href="#home">Home</a>
+            <a href="#myWork">My work</a>
+            <a href="#aboutMe">About me</a>
+            <a href="#contact">Contact</a>
         </nav>
         <main>
+            <div class="sideBar">
+                <a class="chip" href="#home"></a>
+                <a class="chip" href="#myWork"></a>
+                <a class="chip" href="#aboutMe"></a>
+                <a class="chip" href="#contact"></a>
+            </div>
             <img class="laptop" src="./assets/img/laptop.png" alt="laptop">
             <div class="first-text">
                 <h1>
                     Hey ! I'm Jazzon<br>
                     Junior web developer<br>
-                    <span class="bold-text">Welcome on my website</span>
+                    <span class="bold-text">Welcome to my website</span>
                 </h1>
-                <h2>Scroll down for more</h2>
+                <div class="second-text">
+                    <h2>
+                        I’m a design orientend front-end developer.<br> I create dynamic website and app<br> on several
+                        device
+                        for the pleasure of your eyes !
+                    </h2>
+                </div>
             </div>
-
         </main>
-
     </div>
-    <div class="home-second-page">
-        <div class="second-text">
-            <h3>I’m a design orientend<br>
-                front-end developer.<br>
-            </h3>
-            <h4>
-                I create dynamic website and<br>
-                app on several device<br>
-                <span class="bold-text">for the pleasure of your eyes !</span>
-            </h4>
-        </div>
+
+    <!-- MY WORK -->
+    <div class="myWork" id="myWork">
         <div class="work-images">
             <div class="second-img"></div>
             <div class="second-img-2"></div>
         </div>
     </div>
-    <div class="home-third-page">
-        <h5>Check my work here !</h5>
-        <a href="./assets/html/myWork.html">Gallery</a>
 
+    <!-- ABOUT ME -->
+    <div class="aboutMe" id="aboutMe">
+        <img class="portrait" src="./assets/img/portrait.jpg" alt="Jazzon Laurent portrait">
+        <div class="text">
+            <h3>
+                As i said before i’m Jazzon Laurent a junior web developer from Gembloux <br>in Belgium.
+                I’ve recentely started coding and i discorvered a real passion in it and since i dream of working as
+                front-end developer in a nice team.<br>
+                Before that, I finished my studies in graphic industry, but the sector was quiet closed... So I’m happy
+                now that I can gather my knowledge for a common goal.
+            </h3>
+            <h4>
+                Otherwise, I love good food, especially the thousand ways of making pasta. <br>I am a big fan of reading
+                and I devour dozens of books every year. I also love hiking. And above all I love pop culture and
+                especially manga and video games
+            </h4>
+        </div>
     </div>
+
+    <!-- CONTACT -->
+    <div class="contact" id="contact">
+        <img src="./assets/img/phone.png" alt="old phone">
+        <div class="adressContainer">
+            <div class="adress">
+                <img class="logo" src="./assets/img/phone-square-alt-solid.svg" alt="phone logo">
+                <p>+32 472 74 69 18</p>
+            </div>
+            <div class="adress">
+                <img class="logo" src="./assets/img/envelope-solid.svg" alt="envelop logo">
+                <a href="mailto:jazzonlaurent@gmail.com">jazzonlaurent@gmail.com</a>
+            </div>
+            <div class="adress">
+                <img class="logo" src="./assets/img/linkedin-brands.svg" alt="linkedin logo">
+                <a href="https://www.linkedin.com/in/jazzon-laurent/">Go to my Linkedin account</a>
+            </div>
+        </div>
+    </div>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+    <script src="./assets/script/script.js"></script> -->
 </body>
 
 </html>

@@ -22,16 +22,48 @@
   margin: 0;
   padding: 0;
   border: 0;
-  overflow-x: hidden;
+  overflow: hidden;
+  scroll-behavior: smooth;
 }
 
-.home-first-page {
+.sideBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  opacity: 75%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 5vw;
+  height: 30vh;
+  position: fixed;
+  z-index: 1;
+  right: 0;
+}
+
+.sideBar .chip {
+  width: 2vw;
+  height: 3vh;
+  background-image: url("../img/Puce-empty.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.sideBar .chip:hover {
+  background-image: url("../img/Puce-full.svg");
+}
+
+.home {
   height: 100vh;
   width: 100vw;
   background-color: #f4de4d;
 }
 
-.home-first-page nav {
+.home nav {
   width: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -47,22 +79,22 @@
   font-family: "Quicksand-bold";
 }
 
-.home-first-page nav a {
+.home nav a {
   margin-left: 7vw;
   font-size: 1.1vw;
   text-decoration: none;
   color: black;
 }
 
-.home-first-page nav a:hover {
-  color: #929596bd;
+.home nav a:hover {
+  color: #939597;
 }
 
-.home-first-page nav .logo {
+.home nav .logo {
   width: 10vh;
 }
 
-.home-first-page main {
+.home main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,31 +111,36 @@
   margin-top: 15vh;
 }
 
-.home-first-page main .laptop {
+.home main .laptop {
   margin-top: 4vh;
   width: 30vw;
 }
 
-.home-first-page main .first-text {
+.home main .first-text {
   margin-left: 2vw;
   font-family: "Quicksand-light";
 }
 
-.home-first-page main .first-text h1 {
-  font-size: 3.5vw;
+.home main .first-text h1 {
+  font-size: 3vw;
 }
 
-.home-first-page main .first-text h1 .bold-text {
+.home main .first-text h1 .bold-text {
   font-family: "Quicksand-medium";
 }
 
-.home-first-page main .first-text h2 {
+.home main .second-text {
   margin-top: 10vh;
-  font-size: 3.5vw;
+  font-family: "Quicksand-light";
+  color: black;
 }
 
-.home-second-page {
-  background-color: #929596bd;
+.home main .second-text h2 {
+  font-size: 1.5vw;
+}
+
+.myWork {
+  background-color: #939597;
   width: 100vw;
   height: 100vh;
   display: -webkit-box;
@@ -121,31 +158,12 @@
           align-items: center;
 }
 
-.home-second-page .second-text {
-  font-family: "Quicksand-light";
-  color: white;
-  text-align: right;
-}
-
-.home-second-page .second-text h3 {
-  font-size: 3.5vw;
-}
-
-.home-second-page .second-text h4 {
-  margin-top: 10vh;
-  font-size: 3.5vw;
-}
-
-.home-second-page .second-text h4 .bold-text {
-  font-family: "Quicksand-medium";
-}
-
-.home-second-page .work-images {
+.myWork .work-images {
   margin-left: 5vw;
   width: 30vw;
 }
 
-.home-second-page .work-images .second-img {
+.myWork .work-images .second-img {
   width: 20vw;
   height: 40vh;
   background-image: url("../img/tempo-img.jpg");
@@ -154,7 +172,7 @@
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
 }
 
-.home-second-page .work-images .second-img-2 {
+.myWork .work-images .second-img-2 {
   margin-top: -20vh;
   margin-left: 5vw;
   width: 20vw;
@@ -165,17 +183,17 @@
           box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.534);
 }
 
-.home-third-page {
+.aboutMe {
   height: 100vh;
   width: 100vw;
   background-color: #f4de4d;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -184,20 +202,91 @@
           align-items: center;
 }
 
-.home-third-page h5 {
+.aboutMe .portrait {
+  width: 30vw;
+  border: white solid 1.2vw;
+  margin-left: 10vw;
+  -webkit-box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.459);
+          box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.459);
+  -webkit-transform: rotate(5deg);
+          transform: rotate(5deg);
+}
+
+.aboutMe h3 {
   font-family: "Quicksand-light";
-  font-size: 3.5vw;
+  font-size: 1.5vw;
+  margin-right: 10vw;
+  margin-left: 3vw;
 }
 
-.home-third-page a {
+.aboutMe h4 {
   margin-top: 3vh;
-  font-family: "Quicksand-bold";
-  font-size: 2vw;
-  color: #929596bd;
-  text-decoration: none;
+  font-family: "Quicksand-light";
+  font-size: 1.5vw;
+  margin-right: 10vw;
+  margin-left: 3vw;
 }
 
-.home-third-page a:hover {
+.contact {
+  width: 100vw;
+  height: 100vh;
+  background-color: #939597;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contact img {
+  width: 40vw;
+}
+
+.contact .adressContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Quicksand-medium";
+  color: white;
+  font-size: 1.5vw;
+}
+
+.contact .adressContainer .adress {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 10vh;
+}
+
+.contact .adressContainer .logo {
+  width: 10vh;
+}
+
+.contact .adressContainer a, .contact .adressContainer p {
+  margin-left: 2vw;
+  color: white;
+}
+
+.contact .adressContainer a:hover, .contact .adressContainer p:hover {
   color: black;
 }
 /*# sourceMappingURL=style.css.map */
