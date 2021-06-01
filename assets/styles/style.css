@@ -38,23 +38,47 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 5vw;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 15vw;
   height: 30vh;
   position: fixed;
-  z-index: 1;
   right: 0;
+  margin-right: 2vw;
 }
 
 .sideBar .chip {
-  width: 2vw;
+  width: 10vw;
   height: 3vh;
   background-image: url("../img/Puce-empty.svg");
-  background-position: center;
+  background-size: 3vh;
+  background-position: right 1%;
   background-repeat: no-repeat;
+  text-align: right;
+  text-decoration: none;
+}
+
+.sideBar .chip p {
+  line-height: 2vh;
+  font-size: 1vw;
+  font-family: "Quicksand-medium";
+  margin-right: 2vw;
+  color: white;
+  background-color: black;
+  text-align: center;
+  border-radius: 1vh;
+  margin-top: 0.3vh;
+  visibility: hidden;
+  height: 2.2vh;
 }
 
 .sideBar .chip:hover {
   background-image: url("../img/Puce-full.svg");
+}
+
+.sideBar .chip:hover p {
+  visibility: visible;
 }
 
 .home {
@@ -87,7 +111,7 @@
 }
 
 .home nav a:hover {
-  color: #939597;
+  color: white;
 }
 
 .home nav .logo {
@@ -274,19 +298,21 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-bottom: 10vh;
+  margin-bottom: 5vh;
 }
 
 .contact .adressContainer .logo {
   width: 10vh;
 }
 
-.contact .adressContainer a, .contact .adressContainer p {
+.contact .adressContainer a,
+.contact .adressContainer p {
   margin-left: 2vw;
   color: white;
 }
 
-.contact .adressContainer a:hover, .contact .adressContainer p:hover {
+.contact .adressContainer a:hover,
+.contact .adressContainer p:hover {
   color: black;
 }
 /*# sourceMappingURL=style.css.map */
