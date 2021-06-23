@@ -10,7 +10,7 @@
 
 ## Context 
 
-- I'm almost done with my training at Becode and I'm looking for an internship, so I creat this portfolio
+- I've almost done with my training at Becode and I'm looking for an internship, so I creat this portfolio
 
 ## Status
 
