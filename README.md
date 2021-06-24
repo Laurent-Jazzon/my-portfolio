@@ -2,7 +2,7 @@
 
 ## The web page
 
-[Check it here !](https://laurent-jazzon.github.io/my-website/)
+[Check it here !](https://laurent-jazzon.github.io/my-portfolio/)
 
 ## Objective
 
